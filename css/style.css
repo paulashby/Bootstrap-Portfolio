@@ -1,0 +1,7 @@
+:root {
+    --col-primary: #60cad0;
+}
+
+body {
+    background-color: var(--col-primary);
+}
