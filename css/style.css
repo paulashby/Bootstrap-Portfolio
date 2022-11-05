@@ -11,6 +11,6 @@ body {
     border-radius: 90px;
 }
 
-/* h1, .lead {
-    background-color: aliceblue;
-} */
+#work {
+    margin: -32px;
+}
