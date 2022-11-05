@@ -5,3 +5,12 @@
 body {
     background-color: var(--col-primary);
 }
+
+.avatar  img{
+    width: 180px;
+    border-radius: 90px;
+}
+
+/* h1, .lead {
+    background-color: aliceblue;
+} */
