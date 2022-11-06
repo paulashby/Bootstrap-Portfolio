@@ -1,16 +1,42 @@
 :root {
-    --col-primary: #60cad0;
+    --col-primary: #20484a;
+    --col-primary-mid: #2aa0a6;
+    --col-primary-light: #60cad0;
+    --col-primary-bright: #0ba6ac;
 }
 
 body {
     background-color: var(--col-primary);
 }
 
+.navbar-brand img {
+    width: 30px;
+    background-color: var(--col-primary-mid);
+    border-radius: 15px;
+    margin-top: -0.28rem;
+}
+
 .avatar  img{
-    width: 180px;
-    border-radius: 90px;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    border: solid 7px var(--col-primary-mid);
+}
+
+.hero {
+    background-color: transparent;
+    color: #fff;
 }
 
 #work {
-    margin: -32px;
+    margin-top: -5rem;
+}
+
+#work-intro {
+    color: var(--col-primary-light);
+}
+
+.card .btn-primary {
+    background-color: var(--col-primary-mid);
+    border-color: var(--col-primary-mid);
 }
