@@ -1,29 +1,37 @@
 :root {
     --col-primary: #20484a;
+    --col-primary-dark: #1b383b;
+    --col-primary-muted: #4d8487;
     --col-primary-mid: #2aa0a6;
     --col-primary-light: #60cad0;
     --col-primary-bright: #0ba6ac;
-    --col-primary-dark: #1b383b;
-    --col-primary-muted: #4d8487;
+    --col-primary-neon: #69f9ff;
 }
 body {
     background-color: var(--col-primary);
 }
-
-
 
 h3 {
     font-size: 1.4rem;
     color: var(--col-primary-mid);
 }
 
-a:not(.btn-primary) {
-   color: var(--col-primary-light);
+a {
+    transition: all 0.5s ease-in-out;
 }
 
-a:not(.btn-primary):visited,
+a:not(.btn-primary) {
+   color: var(--col-primary-bright);
+}
+
 a:not(.btn-primary):hover {
-    color: var(--col-primary-mid);
+    color:var(--col-primary-neon);   
+    text-decoration: none;
+}
+
+a.btn-primary:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(105,249,255,0.72); 
+    box-shadow: 0px 0px 10px 0px rgba(105,249,255,0.72);
 }
 
 .navbar-brand img {
@@ -93,8 +101,4 @@ a:not(.btn-primary):hover {
     font-size: 1.3rem;
     /* Align with adjacent column */
     margin-top: -1.2rem;
-}
-
-@media only screen and (min-width: 576px) {
-
 }
