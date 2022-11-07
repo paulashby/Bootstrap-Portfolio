@@ -6,15 +6,11 @@
     --col-primary-dark: #1b383b;
     --col-primary-muted: #4d8487;
 }
-
 body {
     background-color: var(--col-primary);
 }
 
-main {
-    /* Allow space for footer */
-    margin-bottom: 15rem;
-}
+
 
 h3 {
     font-size: 1.4rem;
@@ -31,17 +27,17 @@ a:not(.btn-primary):hover {
 }
 
 .navbar-brand img {
-    width: 30px;
     background-color: var(--col-primary-mid);
     border-radius: 15px;
     margin-top: -0.28rem;
+    width: 30px;
 }
 
 .avatar img {
-    height: 240px;
-    width: 240px;
     border-radius: 120px;
     border: solid 7px var(--col-primary-mid);
+    height: 240px;
+    width: 240px;
 }
 
 .hero {
@@ -86,4 +82,19 @@ a:not(.btn-primary):hover {
 
 .page-footer li {
     padding: 0.5rem 0;
+}
+
+#legal {
+    font-size: 0.7rem;
+}
+
+#testimonials blockquote {
+    color: var(--col-primary-mid);
+    font-size: 1.3rem;
+    /* Align with adjacent column */
+    margin-top: -1.2rem;
+}
+
+@media only screen and (min-width: 576px) {
+
 }
