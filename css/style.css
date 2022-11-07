@@ -3,10 +3,31 @@
     --col-primary-mid: #2aa0a6;
     --col-primary-light: #60cad0;
     --col-primary-bright: #0ba6ac;
+    --col-primary-dark: #1b383b;
+    --col-primary-muted: #4d8487;
 }
 
 body {
     background-color: var(--col-primary);
+}
+
+main {
+    /* Allow space for footer */
+    margin-bottom: 15rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--col-primary-mid);
+}
+
+a:not(.btn-primary) {
+   color: var(--col-primary-light);
+}
+
+a:not(.btn-primary):visited,
+a:not(.btn-primary):hover {
+    color: var(--col-primary-mid);
 }
 
 .navbar-brand img {
@@ -16,7 +37,7 @@ body {
     margin-top: -0.28rem;
 }
 
-.avatar  img{
+.avatar img {
     height: 240px;
     width: 240px;
     border-radius: 120px;
@@ -25,18 +46,44 @@ body {
 
 .hero {
     background-color: transparent;
-    color: #fff;
 }
 
 #work {
     margin-top: -5rem;
 }
 
-#work-intro {
+#work-intro,
+#info-intro {
     color: var(--col-primary-light);
+}
+
+.card {
+    border-color: var(--col-primary-muted);
 }
 
 .card .btn-primary {
     background-color: var(--col-primary-mid);
     border-color: var(--col-primary-mid);
+}
+
+.card .btn-primary:hover {
+    background-color: var(--col-primary-light);
+    border-color: var(--col-primary-light);
+}
+
+.card-body {
+    background-color: var(--col-primary-dark);
+}
+
+#skills li {
+    background-color: transparent;
+    border-color: var(--col-primary-mid);
+}
+
+.page-footer ul {
+    list-style: none;
+}
+
+.page-footer li {
+    padding: 0.5rem 0;
 }

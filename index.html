@@ -11,25 +11,26 @@
   <title>Paul Ashby // Developer</title>
 </head>
 
-<body>
+<body class="text-white">
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="./images/icon-code.svg" alt="Developer icon" title="Developer icon"> Paul Ashby</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="./images/icon-code.svg" alt="Developer icon" title="Developer icon">
+        Paul Ashby</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#paperbird">PaperBird Publishing</a>
+            <a class="nav-link" href="#paperbird">PaperBird</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#stmonday">StMonday Golf Wear</a>
+            <a class="nav-link" href="#stmonday">StMonday</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#otriviata">Open Triviata Database</a>
+            <a class="nav-link" href="#otriviata">Open Triviata</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#antygravity">Anty Gravity</a>
@@ -45,7 +46,8 @@
     </nav>
   </header>
 
-  <main class="container pl-5 pl-md-0 pr-md-0 pr-5">
+  <!-- Add some padding to bottom of main to allow for footer -->
+  <main class="container pl-5 pr-5">
 
     <section class="hero row jumbotron jumbotron-fluid pt-sm-4 pb-sm-4 text-white">
       <div class="avatar col-sm-12 col-lg-4 d-flex flex-wrap justify-content-center">
@@ -53,95 +55,179 @@
       </div>
       <div class="hero-text display-4 pt-3 col-sm-12 col-lg-7 col-xl-7 mt-4 text-center text-lg-left">
         <h1>Hi, I&rsquo;m Paul Ashby</h1>
-        <p class="lead justify-content-lg-end pb-5">I&rsquo;m a designer and developer based in London. I&rsquo;m continually honing my technical skills and love to take on a challenge! Maybe we can work together to make something amazing</p>
+        <p class="lead justify-content-lg-end pb-5">I&rsquo;m a designer and developer based in London. I&rsquo;m
+          continually honing my technical skills and love to take on a challenge! Maybe we can work together to make
+          something amazing</p>
       </div>
     </section>
 
-    <section id="work" class="row">
+    <section id="work" class="row mb-5">
 
       <div id="work-intro" class="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
         <h2>Work</h2>
         <p>This is a selection of projects I&rsquo;ve worked on as sole developer - both websites and HTML5 games</p>
       </div>
 
-      <div class="work-samples row mt-sm-8">
+      <div class="work-samples row">
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="paperbird" class="card h-100">
             <img class="card-img-top" src="./images/webpaperbird.jpg" alt="Screenshot of Paperbird website"
               title="Paperbird website">
-            <div class="card-body">
-              <h5 class="card-title">Paperbird Publishing website</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="https://www.paperbirdpublishing.co.uk/" target="blank" class="btn btn-primary">Visit site</a>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Paperbird Publishing website</h3>
+              <p class="card-text">Site built with Processwire CMS back end. Trade customers can log in and place
+                orders. Store owner can manage content &amp; orders and read messages submitted via the site contact
+                form.</p>
+              <p><strong>Role:</strong> Sole designer/developer</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.paperbirdpublishing.co.uk/" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="stmonday" class="card h-100">
             <img class="card-img-top" src="./images/webstmonday.jpg" alt="Screenshot of Saint Monday website"
               title="StMonday website">
-            <div class="card-body">
-              <h5 class="card-title">StMonday golf wear website</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="https://stmonday.xyz/" target="blank" class="btn btn-primary">Visit site</a>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">StMonday golf wear website</h3>
+              <p class="card-text">Online shop for golf clothing start up. This is a WordPress site using the
+                WooCommerce PlugIn for sales functionality. GDPR-compliant analytics are provided by Matomo. I also
+                administer the Virtual Private Server which the site is running on.</p>
+              <p><strong>Role:</strong> Sole developer, server administrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://stmonday.xyz/" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="otriviata" class="card h-100 mb-2">
             <img class="card-img-top" src="./images/webotriviata.jpg" alt="Screenshot of Open Triviaa Database homepage"
               title="Open Triviata Database website">
-            <div class="card-body">
-              <h5 class="card-title">Open Triviata Database website</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="https://otriviata.com/" target="blank" class="btn btn-primary">Visit site</a>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Open Triviata Database website</h3>
+              <p class="card-text">While working with data from the Open Trivia Database for a quiz app, I became
+                frustrated by the lack of question ID numbers. As the inclusion of IDs would greatly simplify the
+                handling of question data, I wrote a PHP programme to add the questions to my own database and an API to
+                serve them along with IDs. The API homepage makes use of the UIKit css framework.</p>
+              <p><strong>Role:</strong> Sole developer, designer</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://otriviata.com/" target="blank" class="btn btn-primary">Visit site</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="antygravity" class="card h-100 mb-2">
             <img class="card-img-top" src="./images/gamesantygravity.jpeg" alt="Anty Gravity game graphic"
               title="Anyty Gravity game">
-            <div class="card-body">
-              <h5 class="card-title">Anty gravity HTML5 game</h5>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Anty gravity HTML5 game</h3>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="https://www.primitive.co/games/antygravity/" target="blank" class="btn btn-primary">Check it
-                out</a>
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/antygravity/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="spotted" class="card h-100 mb-2">
             <img class="card-img-top" src="./images/gamesspotted.jpeg" alt="Spotted game graphic" title="Spotted game">
-            <div class="card-body">
-              <h5 class="card-title">Spotted HTML5 game</h5>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Spotted HTML5 game</h3>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="https://www.primitive.co/games/spotted/" target="blank" class="btn btn-primary">Check it out</a>
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/spotted/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 mt-3 mb-3">
+        <div class="col-xs-12 col-md-6 col-lg-4 mt-3 mb-3">
           <div id="hotlarva" class="card h-100 mb-2">
             <img class="card-img-top" src="./images/gameshotlarva.jpeg" alt="Hot Larva game graphic"
               title="Hot Larva game">
-            <div class="card-body">
-              <h5 class="card-title">Hot Larva HTML5 game</h5>
+            <!-- Make card-body a flex container so we can push button to bottom -->
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Hot Larva HTML5 game</h3>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="https://www.primitive.co/games/hotlarva/" target="blank" class="btn btn-primary">Check it out</a>
+              <p><strong>Role:</strong> Sole developer, designer, illustrator</p>
+              <!-- Wrapper class pushes button to bottom of card -->
+              <div class="mt-auto">
+                <a href="https://www.primitive.co/games/hotlarva/" target="blank" class="btn btn-primary">Check it
+                  out</a>
+              </div>
             </div>
           </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="info" class="row">
+
+      <div id="info-intro" class="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
+        <h2>More info</h2>
+        <p>Here are some more details about my skills and history. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quibusdam voluptas consequatur temporibus eaque! Est accusantium eligendi voluptatum culpa totam?
+          Consequatur.</p>
+      </div>
+
+      <div class="info-entries row">
+
+        <div id="skills" class="col-md-3 mt-3 mb-3">
+          <h3>Skills</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item pl-0">HTML5</li>
+            <li class="list-group-item pl-0">CSS3</li>
+            <li class="list-group-item pl-0">Bootstrap</li>
+            <li class="list-group-item pl-0">UIKit</li>
+            <li class="list-group-item pl-0">JavaScript</li>
+            <li class="list-group-item pl-0">jQuery</li>
+            <li class="list-group-item pl-0">Node.js</li>
+            <li class="list-group-item pl-0">React</li>
+            <li class="list-group-item pl-0">PHP</li>
+            <li class="list-group-item pl-0">Python</li>
+          </ul>
+        </div>
+
+        <div id="about" class="col-md-8 offset-md-1 mt-3 mb-3">
+          <h3>About Me</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit eligendi impedit, cupiditate, quo
+            tempora non quidem aperiam repellat cum voluptatem optio excepturi. Consectetur ex, minima iusto tenetur
+            eaque harum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laudantium aspernatur quod magni a?
+            Quibusdam nobis exercitationem necessitatibus, quia, rem optio tempore reiciendis officia consequuntur
+            maiores, soluta cumque architecto voluptates.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus totam a vel recusandae. Magni numquam
+            nostrum nemo praesentium neque odio dolores autem sed facilis alias quod, dolorum unde, nam nobis?</p>
+
+          <h3>Contact</h3>
+          <p>Please get in touch via my <a href="#">Contact form</a></p>
         </div>
 
       </div>
@@ -149,6 +235,37 @@
     </section>
 
   </main>
+
+  <footer class="page-footer font-small pt-4 fixed-bottom bg-dark">
+    <div class="footer-content container pl-5 pr-5">
+
+      <div class="row mt-3 mb-5">
+        <div class="col-md-3 pl-0 pr-0">
+          <ul class="pl-0">
+            <li>
+              &#169; Paul Ashby, 2022
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>          
+        </div>
+
+        <div id="testimonials" class="col-md-8 offset-md-1 pl-0 pr-0 mt-3 mb-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi. Soluta, natus error quasi provident possimus suscipit in? Ea voluptate eligendi fuga debitis consectetur? Vero ipsum corporis quod nemo reiciendis.
+          </p>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
