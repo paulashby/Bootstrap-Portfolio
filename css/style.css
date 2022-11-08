@@ -48,13 +48,13 @@ a.btn-primary:hover {
     width: 240px;
 }
 
-.hero {
-    background-color: transparent;
+.jumbotron {
+    background-color: var(--col-primary-bright);
 }
 
-#work {
+/* #work {
     margin-top: -5rem;
-}
+} */
 
 #work-intro,
 #info-intro {
